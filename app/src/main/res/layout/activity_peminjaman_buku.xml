@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    tools:context=".PeminjamanBuku">
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button"
+            android:clickable="true"
+            />
+
+        <Button
+            android:id="@+id/btn_beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="#F1CA89"
+            android:text="Beranda"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_tentangkami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#F1CA89"
+            android:text="Tentang Kami"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_halaman"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:background="@drawable/radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:text="Pinjam Buku"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Elektronik Perpustakaan"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:editable="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/ed_IdBuku"
+                    android:background="@drawable/card"
+                    android:hint="ID Buku"
+                    android:paddingLeft="20dp"
+                    android:spinnerMode="dropdown">
+                </EditText>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/ed_idPetugas"
+                    android:background="@drawable/card"
+                    android:hint="ID Petugas"
+                    android:paddingLeft="20dp"
+                    android:spinnerMode="dropdown">
+                </EditText>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/ed_IdSiswa"
+                    android:background="@drawable/card"
+                    android:hint="ID Siswa"
+                    android:paddingLeft="20dp"
+                    android:spinnerMode="dropdown">
+                </EditText>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_TanggalPinjam"
+                    android:background="@drawable/card"
+                    android:hint="  Tanggal Pinjam"
+                    android:padding="16sp"
+                    />
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_TanggalKembali"
+                    android:background="@drawable/card"
+                    android:hint="  Tanggal Kembali"
+                    android:padding="16sp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_peminjaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#F1CA89"
+                    android:text="Pinjam Buku"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

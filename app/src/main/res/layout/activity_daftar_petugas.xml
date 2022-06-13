@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:layout_width="170dp"
+      android:layout_height="80dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="80dp"
+      android:src="@drawable/logo_admin" />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginTop="40dp"
+      android:layout_marginBottom="20dp"
+      android:text="Lengkapi Form dibawah Ini"
+      android:textColor="@color/white"
+      android:textSize="25sp"
+      android:textStyle="bold|italic" />
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="400dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ed_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_input"
+            android:hint="NIK"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ed_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/custom_input"
+            android:hint="Nama Lengkap"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/ed_tgl_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_input"
+            android:hint="Tanggal Lahir"
+            android:padding="10dp"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="6dp"
+            android:text="Belum memiliki akun ?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_jk"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="30dp">
+          <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Laki-Laki"
+              android:id="@+id/rb_lk"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:textStyle="bold|italic"
+              android:paddingStart="10dp"/>
+          <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Perempuan"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:id="@+id/rb_pr"
+              android:textStyle="bold|italic"
+              android:paddingStart="10dp"/>
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pendidikan Terakhir"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/sp_pendidikan"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#B3FFFFFF"
+            android:entries="@array/pendidikan"
+            android:scrollbarSize="25dp"
+            android:spinnerMode="dropdown"
+            android:autofillHints="Pendidikan Terakhir"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Jabatan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/sp_jabatan"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#B3FFFFFF"
+            android:entries="@array/jabatan"
+            android:scrollbarSize="25dp"
+            android:spinnerMode="dropdown"
+            android:autofillHints="Pendidikan Terakhir"/>
+
+        <EditText
+            android:id="@+id/ed_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/custom_input"
+            android:hint="Masukkan Passwoard"
+            android:password="true"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+  </ScrollView>
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#C4C4C4"
+        android:textColor="@color/black"
+        android:text="Daftar"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+</LinearLayout>

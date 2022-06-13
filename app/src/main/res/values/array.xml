@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pendidikan">
+        <item>D3</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <string-array name="jabatan">
+        <item>Kepala Sekolah</item>
+        <item>Guru</item>
+        <item>Staf Perpus</item>
+    </string-array>
+
+    <string-array name="kode_buku">
+        <item>Kode Buku</item>
+    </string-array>
+
+    <string-array name="id_petugas">
+        <item>ID Petugas</item>
+    </string-array>
+
+    <string-array name="id_siswa">
+        <item>ID Siswa</item>
+    </string-array>
+
+    <string-array name="penerbit">
+        <item>Penerbit</item>
+    </string-array>
+
+    <string-array name="tahun_terbit">
+        <item>Tahun Penerbit</item>
+    </string-array>
+</resources>
